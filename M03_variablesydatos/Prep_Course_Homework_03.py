@@ -7,14 +7,14 @@
 
 # In[7]:
 
-
+a= 1
 
 
 # 2) Imprimir el tipo de dato de la constante 8.5
 
 # In[3]:
 
-
+type(8.5)
 
 
 
@@ -23,14 +23,14 @@
 # In[8]:
 
 
-
+type (a)
 
 
 # 4) Crear una variable que contenga tu nombre
 
 # In[2]:
 
-
+name= "Alejandro Saldarriaga"
 
 
 # 5) Crear una variable que contenga un número complejo
@@ -38,7 +38,7 @@
 # In[3]:
 
 
-
+z= 1+ 3j
 
 
 # 6) Mostrar el tipo de dato de la variable crada en el punto 5
@@ -46,7 +46,7 @@
 # In[4]:
 
 
-
+type(z)
 
 
 # 7) Crear una variable que contenga el valor del número Pi redondeado a 4 decimales
@@ -62,6 +62,8 @@ pi = 3.1416
 # In[3]:
 
 
+a="True"
+b=True
 
 
 
@@ -70,7 +72,7 @@ pi = 3.1416
 # In[5]:
 
 
-
+print("el tipo de dato de a es",type(a),"y el de b",type(b),"no son lo mismo.")
 
 
 # 10) Asignar a una variable, la suma de un número entero y otro decimal
@@ -78,7 +80,7 @@ pi = 3.1416
 # In[1]:
 
 
-
+a=5+3.5
 
 
 # 11) Realizar una operación de suma de números complejos
@@ -86,14 +88,18 @@ pi = 3.1416
 # In[2]:
 
 
-
+a= 3j
+b= 1+4J
+c= a+b
 
 
 # 12) Realizar una operación de suma de un número real y otro complejo
 
 # In[4]:
 
-
+a=3
+b=5+3j
+c=a+b
 
 
 
@@ -101,7 +107,7 @@ pi = 3.1416
 
 # In[5]:
 
-
+3*4
 
 
 
@@ -109,7 +115,8 @@ pi = 3.1416
 
 # In[6]:
 
-
+a=2**8
+print(a)
 
 
 # 15) Obtener el cociente de la división de 27 entre 4 en una variable y luego mostrarla
@@ -117,7 +124,8 @@ pi = 3.1416
 # In[8]:
 
 
-
+a=27/4
+print(a)
 
 
 # 16) De la división anterior solamente mostrar la parte entera
@@ -125,6 +133,8 @@ pi = 3.1416
 # In[9]:
 
 
+a=27//4
+print (a)
 
 
 
@@ -132,7 +142,8 @@ pi = 3.1416
 
 # In[1]:
 
-
+b=27%4
+print(a)
 
 
 
@@ -141,30 +152,33 @@ pi = 3.1416
 # In[2]:
 
 
-
-
+c=a*b+8
+print(c)
 
 # 19) Utilizar el operador "+" en una operación donde intervengan solo variables alfanuméricas
 
 # In[3]:
 
 
-
+a="casa "
+b="azul"
+c=a+b
+print(c)
 
 
 # 20) Evaluar si "2" es igual a 2. ¿Por qué ocurre eso?
 
 # In[4]:
 
-
-
+"2"==2
+"uno es tipo str y el otro int"
 
 
 # 21) Utilizar las funciones de cambio de tipo de dato, para que la validación del punto 20 resulte verdadera
 
 # In[11]:
 
-
+int("2")==2
 
 
 
@@ -172,7 +186,7 @@ pi = 3.1416
 
 # In[12]:
 
-
+a= float("3.8") #no funciona por tiene una "," en vez de un "."
 
 
 
@@ -180,15 +194,16 @@ pi = 3.1416
 
 # In[15]:
 
-
-
+a=3
+a-=1
+print(a)
 
 
 # 24) Realizar la operacion 1 << 2 ¿Por qué da ese resultado? ¿Qué es el sistema de numeración binario?
 
 # In[29]:
 
-
+1<<2 #se cambia de 0001 a 0100 con <
 
 
 
@@ -196,13 +211,18 @@ pi = 3.1416
 
 # In[23]:
 
-
-
-
-
+#"2"+2 son de diferentes tipos por lo que no esta permitido operarlos con "+"
+a = int("2")+2 
+print(a)
+b= "2"+ str(2)
+print(b) #es diferente cuando es str 
+c= float("2")+float(2)
+print(c)
 
 # 26) Realizar una operación válida entre valores de tipo entero y string
 
+a="bo"
+print(a*2)
 # In[30]:
 
 
